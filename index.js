@@ -11,10 +11,10 @@ app.use(bodyParser.json());  // Parse JSON payloads
 // GitHub webhook endpoint
 app.post('/webhook/github', (req, res) => {
     console.log('Received webhook:', req.body);
-    res.status(200).send('Webhook receives');
+    res.status(200).send('Webhook sss');
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT 
 app.listen(PORT, () => {
     console.log(`🚀 Webhook server running on port ${PORT}`);
 });
