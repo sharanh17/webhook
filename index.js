@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
+app.use(express.json());
 app.use(bodyParser.json());  // Parse JSON payloads
 // Webhook test commit - Added a comment
 // GitHub webhook endpoint
