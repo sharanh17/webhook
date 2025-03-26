@@ -9,10 +9,8 @@ app.use(bodyParser.json());  // Parse JSON payloads
 // Webhook test commit - Added a comment
 // GitHub webhook endpoint
 app.post('/webhook/github', (req, res) => {
-    console.log('✅ Webhook received from GitHuwwwwb');
-    console.log('🔎 Commit Data:', JSON.stringify(req.body, null, 2));
-
-    res.status(200).send('Webhook receiveddddddddddddd');
+    console.log('Received webhook:', req.body);
+    res.status(200).send('Webhook receivedsssss');
 });
 
 const PORT = process.env.PORT || 3000;
