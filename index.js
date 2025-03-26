@@ -12,7 +12,7 @@ app.post('/webhook/github', (req, res) => {
     console.log('✅ Webhook received from GitHuwwwwb');
     console.log('🔎 Commit Data:', JSON.stringify(req.body, null, 2));
 
-    res.status(200).send('Webhook received');
+    res.status(200).send('Webhook receiveddddddddddddd');
 });
 
 const PORT = process.env.PORT || 3000;
